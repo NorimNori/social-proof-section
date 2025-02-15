@@ -1,6 +1,9 @@
-const Rating = () => {
+const Rating = ({text}) => {
   return (
-    <div>Rating</div>
+    <div className="rating">
+      <div className="rating__stars"></div>
+      <p className="rating__text">{text}</p>
+    </div>
   )
 }
 
