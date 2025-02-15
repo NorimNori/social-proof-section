@@ -1,34 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <p>10,000+ of our users love our products.</p>
+      <p>We only provide great products combined with excellent customer service.</p>
+      <p>See what our satisfied customers are saying about our services.</p>
+
+      <p>Rated 5 Stars in Reviews</p>
+      <p>Rated 5 Stars in Report Guru</p>
+      <p>Rated 5 Stars in BestTech</p>
+
+      <blockquote>
+        <p>Colton Smith</p>
+        <p>Verified Buyer</p>
+        <p>&quot;We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!&quot;</p>
+      </blockquote>
+
+      <blockquote>
+        <p>Irene Roberts</p>
+        <p>Verified Buyer</p>
+        <p>&quot;Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery.&quot;</p>
+      </blockquote>
+
+      <blockquote>
+        <p>Anne Wallace</p>
+        <p>Verified Buyer</p>
+        <p>&quot;Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!&quot;</p>
+      </blockquote>
+    </div>
   )
 }
 
