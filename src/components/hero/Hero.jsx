@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
-    <section className="header-section">
-      <h1 className="header-section__title">
+    <section className="header-section" aria-labelledby="header-title">
+      <h1 id="header-title" className="header-section__title">
         10,000+ of our users love our products.
       </h1>
       <p className="header-section__description">
