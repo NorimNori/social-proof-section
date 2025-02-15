@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body, h1, h2, h3, p {
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+  }
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
