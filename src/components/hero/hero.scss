@@ -15,3 +15,21 @@
         font-weight: 400;
     }
 }
+
+@media (min-width: 1024px) {
+    .header-section {
+        text-align: start;
+
+        &__title {
+            @include mixins.fontSize(3.2rem, 0.8);
+            width: 60%;
+            min-width: 25rem;
+        }
+
+        &__description {
+            @include mixins.fontSize(1.3rem, 1.3);
+            width: 70%;
+            min-width: 30rem;
+        }
+    }
+}

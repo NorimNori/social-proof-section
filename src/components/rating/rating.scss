@@ -8,6 +8,7 @@
     width: 100%;
     padding: .8em;
     border-radius: 5px;
+    flex-shrink: 0;
 
     &__stars {
         @include mixins.centerFlex();
@@ -19,5 +20,39 @@
 
     &__text {
         @include mixins.fontStyle(colors.$veryDarkMagenta, 700, null, 1, 0.005em);
+    }
+}
+
+@media (min-width: 1024px) {
+    .rating {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 1.8em;
+        width: 85%;
+        padding: .8em 1.5em;
+    
+        &__stars {
+            width: auto;
+            gap: .4em;
+            margin-bottom: 0;
+        }
+    
+        &__text {
+            width: auto;
+            margin: .5em 0;
+        }
+
+        &__1 {
+            justify-self: start;
+        }
+
+        &__2 {
+            justify-self: center;
+        }
+
+        &__3 {
+            justify-self: end;
+        }
     }
 }

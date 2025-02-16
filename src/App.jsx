@@ -13,7 +13,7 @@ function App() {
       <section className="ratings" role="region" aria-labelledby="ratings-title">
       <h2 id="ratings-title" className="sr-only">User Ratings</h2>
       {ratings.map((rating, index) => (
-        <Rating key={index} text={rating.text} />
+        <Rating key={index} text={rating.text} index={index}/>
       ))}
     </section>
     <section className="reviews" role="region" aria-labelledby="reviews-title">

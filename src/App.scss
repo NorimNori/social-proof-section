@@ -1,7 +1,6 @@
 @use "@/styles/mixins";
 
 body {
-  @include mixins.center-grid;
   font-family: "League Spartan", serif;
   width: 100vw;
   height: 100vh;
@@ -44,11 +43,15 @@ main {
 
 .reviews {
   @include mixins.center-grid;
+  width: 100%;
   gap: 1em;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
+
   main {
+    padding: 0 4rem;
+    max-width: 81rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
@@ -63,11 +66,18 @@ main {
 
   .ratings {
     grid-area: ratings;
+
+    width: 90%;
+    display: grid;
   }
 
   .reviews {
     grid-area: review;
-    @include mixins.center-grid;
+    justify-content:space-between;
+
+    min-height: 14.5rem;
+    margin-top: 4rem;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
   }
 }

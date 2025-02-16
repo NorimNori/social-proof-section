@@ -35,3 +35,24 @@
 
     }
 }
+
+@media (min-width: 1024px) {
+    .review-card{
+        max-width: 23rem;
+        height: 85%;
+
+        &__Colton-Smith {
+            justify-self: start;
+            align-self: start;
+        }
+
+        &__Irene-Roberts{
+            align-self: center;
+        }
+
+        &__Anne-Wallace {
+            justify-self: end;
+            align-self: end;
+        }
+    }
+}
