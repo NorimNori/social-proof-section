@@ -30,16 +30,15 @@
     }
 
     &__text {
-        @include mixins.fontStyle(colors.$White, 500, 0.92rem, 1.25, 0.015em);
+        @include mixins.fontStyle(colors.$White, 500, clamp(0.92rem, 0.874rem + 0.195vw, 1.05rem), 1.25, 0.015em);
         margin-top: 1.8em;
 
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .review-card{
         max-width: 23rem;
-        height: 85%;
 
         &__Colton-Smith {
             justify-self: start;

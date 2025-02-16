@@ -6,9 +6,8 @@
     text-align: center;
     font-weight: 700;
     width: 100%;
-    padding: .8em;
+    padding: .8em 0 0;
     border-radius: 5px;
-    flex-shrink: 0;
 
     &__stars {
         @include mixins.centerFlex();
@@ -19,18 +18,18 @@
     }
 
     &__text {
-        @include mixins.fontStyle(colors.$veryDarkMagenta, 700, null, 1, 0.005em);
+        @include mixins.fontStyle(colors.$veryDarkMagenta, 700, clamp(1rem, 0.912rem + 0.376vw, 1.25rem), 1, 0.005em);
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .rating {
         display: flex;
         align-items: center;
         justify-content: start;
         gap: 1.8em;
         width: 85%;
-        padding: .8em 1.5em;
+        padding: .7em 1.5em;
     
         &__stars {
             width: auto;

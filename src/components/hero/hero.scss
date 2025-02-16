@@ -6,28 +6,26 @@
     color: colors.$veryDarkMagenta;
 
     &__title {
-        @include mixins.fontSize(2.5rem, 0.8);
+        @include mixins.fontSize(clamp(2.5rem, 2.148rem + 1.502vw, 3.5rem), 0.8);
         margin-bottom: 1.3rem;
     }
 
     &__description {
-        @include mixins.fontSize(1rem, 1.3);
+        @include mixins.fontSize(clamp(1rem, 0.894rem + 0.451vw, 1.3rem), 1.3);
         font-weight: 400;
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .header-section {
         text-align: start;
 
         &__title {
-            @include mixins.fontSize(3.2rem, 0.8);
             width: 60%;
             min-width: 25rem;
         }
 
         &__description {
-            @include mixins.fontSize(1.3rem, 1.3);
             width: 70%;
             min-width: 30rem;
         }
