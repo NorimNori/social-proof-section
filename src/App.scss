@@ -46,3 +46,28 @@ main {
   @include mixins.center-grid;
   gap: 1em;
 }
+
+@media (min-width: 1440px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header header ratings ratings"
+      "review review review review"
+      // "footer footer footer";
+  }
+
+  .header-section {
+    grid-area: header;
+  }
+
+  .ratings {
+    grid-area: ratings;
+  }
+
+  .reviews {
+    grid-area: review;
+    @include mixins.center-grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
