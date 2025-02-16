@@ -1,3 +1,5 @@
+import './hero.scss'
+
 const Hero = () => {
   return (
     <section className="header-section" aria-labelledby="header-title">

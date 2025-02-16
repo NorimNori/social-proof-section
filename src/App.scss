@@ -27,3 +27,22 @@ body {
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
+
+main {
+  @include mixins.center-grid;
+  width: 90%;
+  margin: 4rem 0;
+  gap: 2rem;
+}
+
+.ratings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .7em;
+}
+
+.reviews {
+  @include mixins.center-grid;
+  gap: 1em;
+}

@@ -1,0 +1,26 @@
+@use "@/styles/colors";
+
+.rating {
+    background-color: colors.$lightGrayishMagenta;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    padding: .8em;
+    border-radius: 5px;
+
+    &__stars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .4em;
+        width: 100%;
+        height: auto;
+        margin-bottom: .7em;
+    }
+
+    &__text {
+        color: colors.$veryDarkMagenta;
+        font-weight: 700;
+        letter-spacing: .005em;
+    }
+}

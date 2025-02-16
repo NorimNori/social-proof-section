@@ -1,0 +1,40 @@
+@use "@/styles/colors";
+
+.review-card {
+    width: 100%;
+    padding: 2em;
+    border-radius: 5px;
+    background-color: colors.$veryDarkMagenta;
+
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+
+    &__image {
+        width: 2.2em;
+        height: 2.2em;
+        border-radius: 50px;
+        margin-right: 1.3em;
+    }
+
+    &__name {
+        color: colors.$White;
+        font-weight: 700;
+        margin-bottom: .3em;
+    }
+
+    &__badge {
+        color: colors.$softPink;
+        letter-spacing: 0.015em;
+    }
+
+    &__text {
+        color: colors.$White;
+        font-weight: 500;
+        font-size: .92rem;
+        margin-top: 1.8em;
+        line-height: 1.25;
+        letter-spacing: .015em;
+    }
+}
