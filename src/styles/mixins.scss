@@ -3,3 +3,24 @@
     place-items: center;
 }
 
+@mixin centerFlex($justify-center: true) {
+    display: flex;
+    align-items: center;
+    @if $justify-center {
+      justify-content: center;
+    }
+}
+
+@mixin fontStyle($color, $weight, $fontSize, $lineHeight, $letterSpacing) {
+    color: $color;
+    font-weight: $weight;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+}
+
+@mixin fontSize($size, $lineHeight) {
+    font-size: $size;
+    line-height: $lineHeight;
+}
+

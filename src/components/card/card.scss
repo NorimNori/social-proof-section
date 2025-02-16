@@ -1,4 +1,5 @@
 @use "@/styles/colors";
+@use "@/styles/mixins";
 
 .review-card {
     width: 100%;
@@ -7,8 +8,7 @@
     background-color: colors.$veryDarkMagenta;
 
     &__header {
-        display: flex;
-        align-items: center;
+        @include mixins.centerFlex(false);
     }
 
     &__image {
@@ -30,11 +30,8 @@
     }
 
     &__text {
-        color: colors.$White;
-        font-weight: 500;
-        font-size: .92rem;
+        @include mixins.fontStyle(colors.$White, 500, 0.92rem, 1.25, 0.015em);
         margin-top: 1.8em;
-        line-height: 1.25;
-        letter-spacing: .015em;
+
     }
 }
