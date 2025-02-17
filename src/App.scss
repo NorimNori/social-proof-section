@@ -7,6 +7,8 @@ body {
   height: 100vh;
   padding: 0;
   margin: 0;
+
+  @include mixins.background-image('../src/assets/images/bg-pattern-top-mobile.svg', './src/assets/images/bg-pattern-bottom-mobile.svg', 0 0, 100% calc(30rem - 40%), 100%, 100%)
 }
 
 #root{
@@ -68,6 +70,10 @@ footer {
 
 @media (min-width: 1024px) {
 
+  body {
+    @include mixins.background-image('../src/assets/images/bg-pattern-top-desktop.svg', './src/assets/images/bg-pattern-bottom-desktop.svg', -2rem 0, calc(100px + 100%) 100%, 38%, 85%)
+  }
+
   main {
     padding: 0 clamp(0rem, -9.846rem + 15.385vw, 4rem);
     max-width: 81rem;
@@ -75,7 +81,7 @@ footer {
     grid-template-rows: auto;
     grid-template-areas: 
       "header header ratings ratings"
-      "review review review review"
+      "review review review review";
   }
 
   .header-section {
