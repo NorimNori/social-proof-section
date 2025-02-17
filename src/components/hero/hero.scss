@@ -7,12 +7,17 @@
 
     &__title {
         @include mixins.fontSize(clamp(2.5rem, 2.148rem + 1.502vw, 3.5rem), 0.8);
-        margin-bottom: 1.3rem;
+        margin-bottom: 1.5rem;
     }
 
     &__description {
-        @include mixins.fontSize(clamp(1rem, 0.894rem + 0.451vw, 1.3rem), 1.3);
-        font-weight: 400;
+        @include mixins.fontSize(clamp(1.1rem, 1.065rem + 0.15vw, 1.2rem), 1.3);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header-section {
+        width: 75%;
     }
 }
 

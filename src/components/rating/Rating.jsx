@@ -9,7 +9,7 @@ const Rating = ({text, index}) => {
         <img key={i} src={starIcon} alt=""/>
       ))}
       </div>
-      <blockquote id="rating-text" className="rating__text">{text}</blockquote>
+      <p id="rating-text" className="rating__text">{text}</p>
     </div>
   )
 }
