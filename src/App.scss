@@ -30,7 +30,7 @@ body {
 main {
   @include mixins.center-grid;
   width: 90%;
-  max-width: 35rem;
+  max-width: 40rem;
   margin: 4rem 0;
   gap: 2rem;
 }
@@ -48,10 +48,10 @@ main {
   gap: 1em;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
 
   main {
-    padding: 0 4rem;
+    padding: 0 clamp(0rem, -9.846rem + 15.385vw, 4rem);
     max-width: 81rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
@@ -73,8 +73,8 @@ main {
   .reviews {
     grid-area: review;
     justify-content:space-between;
-
-    min-height: 15rem;
+    
+    min-height: 18rem;
     margin-top: 4rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;

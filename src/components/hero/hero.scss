@@ -16,18 +16,18 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
     .header-section {
         text-align: start;
 
         &__title {
-            width: 60%;
-            min-width: 25rem;
+            width: 75%;
+            min-width: 20rem;
         }
 
         &__description {
-            width: 70%;
-            min-width: 30rem;
+            width: 80%;
+            min-width: 25rem;
         }
     }
 }
