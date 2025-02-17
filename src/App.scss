@@ -1,4 +1,5 @@
 @use "@/styles/mixins";
+@use "@/styles/colors";
 
 body {
   font-family: "League Spartan", serif;
@@ -49,6 +50,16 @@ main {
   gap: 1em;
 }
 
+footer {
+  font-size: .7rem;
+  color: colors.$veryDarkMagenta;
+  padding-bottom: 1rem;
+  a { 
+      text-align: center;
+      color: colors.$softPink
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .ratings {
     margin: 1rem 0 3rem;
@@ -65,7 +76,6 @@ main {
     grid-template-areas: 
       "header header ratings ratings"
       "review review review review"
-      // "footer footer footer";
   }
 
   .header-section {

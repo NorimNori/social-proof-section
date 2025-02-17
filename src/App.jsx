@@ -8,6 +8,7 @@ function App() {
 
 
   return (
+    <>
     <main>
       <Hero />
       <section className="ratings" role="region" aria-labelledby="ratings-title">
@@ -28,6 +29,13 @@ function App() {
       ))}
     </section>
     </main>
+    <footer className="footer" role="contentinfo">
+      <p className="footer__text">
+        Challenge by <a className="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank" title="Visit Frontend Mentor">Frontend Mentor</a>. 
+        Coded by <a className="footer__link" href="https://www.frontendmentor.io/profile/NorimNori" title="Visit Gloria Rangel's profile">Gloria Rangel</a>.
+      </p>
+    </footer>
+    </>
   )
 }
 
